@@ -6,11 +6,5 @@
 #define ALIVE 1
 #define DEAD 0
 
-
-void determineNexState(); 
-
-
-
-
-
+uint8_t determineNextState(uint8_t currentState, int neighbors); 
 #endif

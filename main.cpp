@@ -1,6 +1,5 @@
-#include
-
-
+#include "Simulator/simulator.h"
+#include "Render/render.h"
 
 int main() {
     while(1) {

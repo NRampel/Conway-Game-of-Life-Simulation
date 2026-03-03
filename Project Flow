@@ -1,4 +1,13 @@
 MODULES: 
-    Grid
-    Cell
+    Grid: Aims to detail grid and any logic associated with it
+    Cell: Aims to detail cell and any logic associated with it
+    Simulator: Aims to simulate the game of life
+    Render: Aims to render the grid to the console 
+    Main: Will tie everything together 
+
+
+Flow: 
+    Grid gets included in render 
+    Render gets included in simulator 
+    Simulator gets included in main 
     
