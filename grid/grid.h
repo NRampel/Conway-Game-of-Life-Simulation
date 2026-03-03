@@ -12,8 +12,8 @@ class Grid {
         size_t getHeight(); 
         size_t getWidth(); 
     private: 
-        const size_t width; 
-        const size_t height; 
+        size_t width; 
+        size_t height; 
         std::vector<uint8_t> gridArr; 
 }; 
 #endif 

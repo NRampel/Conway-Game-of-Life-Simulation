@@ -1,0 +1,6 @@
+*.exe
+game_of_life
+*.o
+.vscode/
+Thumbs.db
+*.txt
