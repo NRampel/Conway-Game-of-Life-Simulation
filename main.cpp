@@ -3,11 +3,14 @@
 #include <chrono> 
 #include <thread>
 
+#define WIDTH 100 
+#define HEIGHT 40
+
 int main() {
-    Simulator simulator(50, 30);
+    Simulator simulator(WIDTH, HEIGHT);
     srand(time(0)); 
-    for (size_t y = 0; y < 20; y++) {
-        for (size_t x = 0; x < 40; x++) {
+    for (size_t y = 0; y < HEIGHT; y++) {
+        for (size_t x = 0; x < WIDTH; x++) {
             if (rand() % 2 == 0) {
                 simulator.currentGrid.setCellState(x, y, ALIVE);
             }
