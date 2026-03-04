@@ -18,5 +18,5 @@ void drawGrid(Grid& currentGrid) {
 }
 
 void clearScreen() {
-    system("cls"); 
+   std::cout<<"\033[H"; 
 }
