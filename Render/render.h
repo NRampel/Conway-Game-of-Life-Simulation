@@ -7,6 +7,10 @@
 #include <cstdlib>
 #include <string>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif 
+
 void drawGrid(Grid& currentGrid); 
 void clearScreen(); 
 

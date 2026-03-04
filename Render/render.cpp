@@ -5,12 +5,8 @@ void drawGrid(Grid& currentGrid) {
     frame.reserve(currentGrid.getWidth() * currentGrid.getHeight() + currentGrid.getHeight()); 
     for(size_t y = 0; y < currentGrid.getHeight(); y++) {
         for(size_t x = 0; x < currentGrid.getWidth(); x++) {
-            if(currentGrid.getCellState(x, y) == ALIVE) {
-                frame += "#"; 
-            }
-            else {
-                frame += "."; 
-            }
+            if(currentGrid.getCellState(x, y) == ALIVE) frame += "#"; 
+            else frame += "."; 
         }
         frame += '\n';
     }
