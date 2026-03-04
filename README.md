@@ -1,5 +1,5 @@
-# Conway-Game-of-Life-Simulation
-A passion project that aims to simulate Conway's Game of Life
+# Conway's Game of Life Simulation
+A high performance terminal-based simulation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). 
 
 ## Tech Stack: 
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
