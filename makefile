@@ -3,7 +3,10 @@ CXXFLAGS = -Wall -std=c++17 -O2
 
 TARGET = game_of_life
 
-SRCS = main.cpp grid/grid.cpp cell/cell.cpp simulator/simulator.cpp render/render.cpp
+SRCS = main.cpp grid/grid.cpp cell/cell.cpp simulator/simulator.cpp render/render.cpp utilities/utilities.cpp
+
+CXX = g++
+
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(TARGET)

@@ -3,6 +3,7 @@
 
 #include "../grid/grid.h"
 #include "../cell/cell.h"
+#include "../Utilities/utilities.h"
 #include <iostream>
 #include <cstdlib>
 #include <string>
@@ -11,7 +12,6 @@
 #include <windows.h>
 #endif 
 
-void drawGrid(Grid& currentGrid); 
-void clearScreen(); 
+void drawGrid(Grid& currentGrid, std::string icon); 
 
 #endif
