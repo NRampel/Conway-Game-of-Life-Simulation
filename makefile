@@ -1,15 +1,12 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++17 -O2
 
-TARGET = game_of_life
-
-SRCS = main.cpp grid/grid.cpp cell/cell.cpp simulator/simulator.cpp render/render.cpp utilities/utilities.cpp
-
-CXX = g++
+SRCS = $(wildcard *.cpp) $(wildcard */*.cpp)
 
 OBJS = $(SRCS:.cpp=.o)
 
-all: $(TARGET)
+
+TARGET = game_of_life
 
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
@@ -18,4 +15,4 @@ $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(TARGET)
+	del /f *.o $(TARGET)

@@ -19,13 +19,13 @@ int main() {
         for (size_t y = 0; y < HEIGHT; y++) {
             for (size_t x = 0; x < WIDTH; x++) {
                 if (rand() % 2 == 0) {
-                    simulator.currentGrid.setCellState(x, y, ALIVE);
+                    simulator.currentGrid->setCellState(x, y, ALIVE);
                 }
             }
         }
         while(true) {
             clearScreen(); 
-            drawGrid(simulator.currentGrid, icon); 
+            drawGrid(*simulator.currentGrid, icon); 
             simulator.update(); 
             std::this_thread::sleep_for(std::chrono::milliseconds(20)); 
         } 
